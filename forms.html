@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+</head>
+<body>
+    <form method="POST" action="https://hookb.in/dmPqPBNRm2fGDEK1YmMM">
+
+        <label for="email">Enter E-mail address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter E-mail address">
+
+        <br>
+
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+
+        <br>
+
+        <label for="bio">Tell us about yourself.</label>
+        <textarea name="bio" id="bio" cols="60" rows="4"></textarea>
+
+        <br>
+
+        <p>How did you hear about us</p>
+            <div>
+                <input type="radio" id="billboard" name="advert1" value="billboard">
+                <label for="billboard">billboard</label>
+            </div>
+
+            <div>
+                <input type="radio" id="radio advertisement" name="advert2" value="radio advertisement">
+                <label for="radio advertisement">radio advertisement</label>
+            </div>
+
+            <div>
+                <input type="radio" id="internet advertisement" name="advert3" value="internet advertisement">
+                <label for="internet advertisement">internet advertisement</label>
+            </div>
+
+            <div>
+                <input type="radio" id="other" name="advert4" value="other">
+                <label for="other">other</label>
+            </div>
+
+        <!--
+            Q: What happens if the inputs are given different name attributes?
+            A: The inputs are no longer linked together and you would be able
+            to select multiple inputs at the same time under different name attributes
+        -->
+
+            <label for="browser">What browser are you using?</label>
+            <select name="userbrowser" id="browser">
+                <option value="chrome">Chrome</option>
+                <option value="firefox">Firefox</option>
+                <option value="safari">Safari</option>
+                <option value="opera">Opera</option>
+            </select>
+        <br>
+        <button type="submit">Submit</button>
+        <!--
+            Q: What do you notice when changing the form's request method from GET to POST?
+            A: for POST: All user input is posted in the body of the hookbin.
+               for GET: All user input is posted as a query string on hookbin
+               and all the sensitive data is put into the users URL as query string.
+
+            Q: What happens if you leave off the name attribute on an input?
+            A: When you leave off the name attribute it doesn't give your answers a value
+            to link to for your question.
+
+            Q: What happens if you leave off the id attribute on a form input?
+            A: There's nothing for your label attribute to link to
+         -->
+    </form>
+</body>
+</html>
