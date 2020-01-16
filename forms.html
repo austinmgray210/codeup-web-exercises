@@ -5,7 +5,9 @@
     <title>Register With Us</title>
 </head>
 <body>
-    <form method="POST" action="https://hookb.in/dmPqPBNRm2fGDEK1YmMM">
+    <form method="POST" action="https://hookb.in/BYn39bl2nLIa8p0b6e8o" enctype="multipart/form-data">
+
+        <!-- enctype="multipart/form-data" is for web services to show multiple checkboxes as an input -->
 
         <label for="email">Enter E-mail address:</label>
         <input type="email" id="email" name="email" placeholder="Enter E-mail address">
@@ -18,27 +20,29 @@
         <br>
 
         <label for="bio">Tell us about yourself.</label>
+        <br>
         <textarea name="bio" id="bio" cols="60" rows="4"></textarea>
 
         <br>
 
-        <p>How did you hear about us</p>
+        <p> <h3>How did you hear about us?</h3>
             <div>
-                <input type="radio" id="billboard" name="advert" value="billboard">
                 <label for="billboard">billboard</label>
+                <input type="checkbox" id="billboard" name="advert" value="billboard">
             </div>
             <div>
-                <input type="radio" id="radio advertisement" name="advert" value="radio advertisement">
                 <label for="radio advertisement">radio advertisement</label>
+                <input type="checkbox" id="radio advertisement" name="advert" value="radio advertisement">
             </div>
             <div>
-                <input type="radio" id="internet advertisement" name="advert" value="internet advertisement">
                 <label for="internet advertisement">internet advertisement</label>
+                <input type="checkbox" id="internet advertisement" name="advert" value="internet advertisement">
             </div>
             <div>
-                <input type="radio" id="other" name="advert" value="other">
                 <label for="other">other</label>
+                <input type="checkbox" id="other" name="advert" value="other">
             </div>
+         </p>
 
         <!--
             Q: What happens if the inputs are given different name attributes?
