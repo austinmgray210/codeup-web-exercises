@@ -3,8 +3,57 @@ multi
 line
 comment
 */
+body {
+    background-color: black;
+    background-image: url("../img/grey-tile.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: 'Gayathri', 'Poppins', sans-serif;
+}
+
 
 .fancy-header {
     color: purple; /* single line comment */
     text-decoration: underline;
+    text-align: center;
 }
+
+h1, h2 {
+    color: teal;
+    text-decoration: underline;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+ul {
+    list-style: square;
+}
+
+td, tr {
+    font-size: 1.5em;
+    padding: .5em;
+    border: 1px solid teal;
+
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    color: aqua;
+}
+
+
+
