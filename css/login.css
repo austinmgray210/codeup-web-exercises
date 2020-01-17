@@ -6,9 +6,9 @@
 body, html {
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
     background-color: #cbffcd;
     font-family: Arial, Ubuntu, sans-serif;
-    box-sizing: border-box;
 }
 
 form {
@@ -63,13 +63,14 @@ fieldset {
     /* The border of this element should be 1px, and its color should be light grey */
     border: 1px solid lightgrey;
     background-color: #0fb784;
+
 }
 
 .form-control {
     /* There must be 4px on top of the text and below the text of an input with this class */
     padding: 4px 0px;
     /* It should have a separation of .5em from elements on top of it and below it */
-    margin: .5em 0em;
+    margin: .5em 0px;
     /* You'll need to use the `calc` function to make the width of this element match the width of the button */
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Calculate based on the padding of the `.btn` class */
