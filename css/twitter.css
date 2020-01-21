@@ -55,7 +55,7 @@ a {
 }
 .profile-form {
     float: right;
-    line-height: 80px;
+    line-height: 85px;
 }
 .profile-image {
     position: absolute;
@@ -84,7 +84,7 @@ a {
     margin: 0 .5em;
 }
 .container {
-    padding-top: 2em;
+    margin-top: 2em;
 }
 .media {
     width: 100%;
