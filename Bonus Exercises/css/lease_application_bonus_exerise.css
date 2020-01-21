@@ -1,0 +1,33 @@
+html {
+    margin: 3em;
+    font-family: ;
+}
+
+#received {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+#mainTitle {
+    text-align: center;
+
+}
+
+.headerUpperBold {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.headerUpperSmall {
+    font-size: 1em;
+}
+
+.headerSmallBold {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.headerBigBold {
+    font-size: 1.8em;
+    font-weight: bold;
+}

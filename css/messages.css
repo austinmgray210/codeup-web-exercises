@@ -4,17 +4,16 @@ body, html {
     padding: 0;
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
-}
-
-:root {
-    --bg-info-color: #c3d5ff;
-    --text-info-color: #231379;
-    --bg-success-color: #c5f2d2;
-    --text-success-color: #1d6635;
-    --bg-warning-color: #fbfdbd;
-    --text-warning-color: #a49946;
-    --bg-error-color: #f8c8cf;
-    --text-error-color: #73112b;
+/* ------------------------BG-COLORS-----------------------------*/
+    --bg-info-color: #c3d5ff;       /*Info BG*/
+    --bg-success-color: #c5f2d2;    /*Success BG*/
+    --bg-warning-color: #fbfdbd;    /*Warning BG*/
+    --bg-error-color: #f8c8cf;      /*Error BG*/
+/* ------------------------TEXT-COLORS-------------------------- */
+    --text-info-color: #231379;     /*Info Text*/
+    --text-success-color: #1d6635;  /*Success Text*/
+    --text-warning-color: #a49946;  /*Warning Text*/
+    --text-error-color: #73112b;    /*Error Text*/
 }
 
 
