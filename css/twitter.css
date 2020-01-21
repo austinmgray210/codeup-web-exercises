@@ -55,7 +55,7 @@ a {
 }
 .profile-form {
     float: right;
-    line-height: 85px;
+    line-height: 80px;
 }
 .profile-image {
     position: absolute;
@@ -99,7 +99,7 @@ a {
     float: left;
 }
 .media-body {
-    width: calc(100% - 58px);
+    width: calc(100% - 50px);
     float: left;
 }
 .btn {
