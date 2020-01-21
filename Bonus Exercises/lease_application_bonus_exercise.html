@@ -8,11 +8,11 @@
 <body>
     <hr>
         <div id="received">
-            Received on _____________________ (date) at ___________ (time)
+            Received on<input type="date">(date) at<input type="time">(time)
         </div>
         <div id="mainTitle">
             <div id="taorLogo">
-                <img src="img/TAoR%20Logo.png" alt="TAoR Logo" width="555px" height="125px">
+                <img class="companylogopic" src="img/TAoR%20Logo.png" alt="TAoR Logo" width="555px" height="125px">
             </div>
             <div class="headerUpperBold">RESIDENTIAL LEASE APPLICATION</div>
             <div class="headerUpperSmall">USE OF THIS FORM BY PERSONS WHO ARE NOT MEMBERS OF THE TEXAS ASSOCIATION OF REALTORS&#174; IS NOT AUTHORIZED.</div>
@@ -20,12 +20,43 @@
             <br>
             <div class="headerBigBold">Each occupant and co-applicant 18 years or older must submit a separate application.</div>
         </div>
-        <div id="pageBreakHeader">
-        <div id="horizontalRule">
-            <hr color="black" size="3px"/>
-        </div>
-
+        <hr color="black" size="3px"/>
     </header>
+    <body>
+        <div name="address" class="address">Property Address:
+            <input type="text" name="address" size="99" maxlength="90">
+        </div>
+        <div class="customerMoveInInfo" name="customerMoveInInfo">
+            <label for="antiMoveIn">Anticipated Move In Date</label>
+            <input type="date" id="antiMoveIn" name="antiMoveIn">
+
+            <label for="monthlyRent">Monthly Rent: $</label>
+            <input type="number" id="monthlyRent" name="monthlyRent">
+
+            <label for="securityDeposit">Security Deposit: $</label>
+            <input type="number" id="securityDeposit" name="securityDeposit">
+        </div>
+        <br>
+        <div name="clientReferredInfo" class="clientReferredInfo">
+            <label id="applicantReferredBy">Applicant was referred to Landlord by:</label>
+            <br>
+            <list id="referredByList">
+                <input type="checkbox" id="realEstateAgent" name="referredBy" value="realEstateAgent">
+                <label for="realEstateAgent">Real Estate Agent</label>
+                <input type="text" name="referredBy" size="63">(name)
+                <input type="number" name="referredBy" minlength="10" maxlength="10">(phone)
+                <input type="checkbox" id="newspaper" name="referredBy" value="newspaper">
+                    <label for="newspaper" class="newspaper">Newspaper</label>
+                <input type="checkbox" id="sign" name="referredBy" value="sign">
+                    <label for="sign" class="sign">Sign</label>
+                <input type="checkbox" id="internet" name="referredBy" value="internet">
+                    <label for="internet" class="internet">Internet</label>
+                <input type="checkbox" id="other" name="referredBy" value="other">
+                    <label for="other" class="other">Other</label>
+                <input type="text" name="referredBy" size="70">
+            </list>
+        </div>
+    </body>
 
 </body>
 </html>

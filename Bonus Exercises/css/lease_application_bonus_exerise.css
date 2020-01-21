@@ -1,35 +1,67 @@
 html {
-    margin: 3em;
+    margin: 1em;
+    width: 8.5in;
+}
+body {
+    font-size: .8em;
+}
+
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    font-size: 1.1em;
 }
 
 #received {
     text-align: right;
     padding-bottom: 10px;
+    padding-top: 5px;
+    font-size: .75em;
 }
 
 #mainTitle {
     text-align: center;
-
+    width: 100%;
 }
 
 .headerUpperBold {
-    font-size: 2.1em;
+    font-size: 2.3em;
     font-weight: bold;
 }
 
 .headerUpperSmall {
-    font-size: 1em;
+    font-size: .8em;
 }
 
 .headerSmallBold {
-    font-size: 1em;
+    font-size: .8em;
     font-weight: bold;
 }
 
 .headerBigBold {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
+    padding-bottom: 10px;
 }
 #pageBreakHeader {
     padding-bottom: 5px;
+}
+.address {
+    text-align: right;
+}
+.customerMoveInInfo {
+    text-align: right;
+    position: relative;
+}
+
+label.newspaper {
+    padding-right: 15px;
+}
+label.sign {
+    padding-right: 15px;
+}
+label.internet {
+    padding-right: 15px;
 }
