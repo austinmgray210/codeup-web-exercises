@@ -1,48 +1,34 @@
 * {
-    font-family: 'Montserrat','Work Sans',  sans-serif;
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-}
-.zoom:hover {
-    transform: scale(1.3);
+    font-family: 'Montserrat','Work Sans',  sans-serif;
 }
 
-nav {
-    background-color: #C1C1C1;
-}
-
-nav a {
-
-}
-
-
-ul {
+.topNav {
     display: flex;
-    list-style: none;
-    padding: 5px;
-    margin: auto;
-    align-items: center;
+    background-color: #C1C1C1;
+    width: 100%;
 }
 
-li:nth-child(5) {
+#navLogo {
+    display: flex;
     font-size: 3em;
     padding: .2em 0;
 }
 
-
-
-/* Navbar icons */
-.navIcons {
+.navLinks {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-li.navArticles .navProducts .navMarket .navJobs {
-    margin-right: 0 auto;
-}
-li.navFollowUs {
-    margin-left: 0 auto;
+ul.navLeft {
+
 }
 
  /* Anchor settings */
@@ -51,6 +37,12 @@ a {
     text-decoration: none;
     display: inline-block;
 }
+
 a:hover {
     color: blue;
+    transform: scale(1.1);
+}
 
+.navIcons {
+    width: 25px;
+}
