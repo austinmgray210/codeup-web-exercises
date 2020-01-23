@@ -17,6 +17,8 @@ div {
     display: flex;
 }
 
+
+
 .topBlue2x2 {
     background-color: #334577;
     grid-area: 1 / 1 / 3 / 3;
