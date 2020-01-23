@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    border: 5px solid black;
+    background-color: black;
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin: 15em auto;
+}
+div {
+    display: flex;
+}
+
+.topBlue2x2 {
+    background-color: #334577;
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.topRed6x3 {
+    background-color: #cb342e;
+    grid-area : 1 / 3 / 4 / 9;
+}
+.leftYellow2x3 {
+    background-color: #f5cc47;
+    grid-area: 3 / 1 / 6 / 3;
+}
+.midWhite2x4 {
+    background-color: #ffffff;
+    grid-area: 4 / 3 / 8 / 5;
+}
+.rightWhite4x2 {
+    background-color: #ffffff;
+    grid-area: 4 / 5 / 6 / 9;
+}
+.leftWhite2x2 {
+    background-color: #ffffff;
+    grid-area: 6 / 1 / 8 / 3;
+}
+.rightYellow4x2 {
+    background-color: #f5cc47;
+    grid-area: 6 / 5 / 8 / 9;
+}
+.leftRed2x1 {
+    background-color: #cb342e;
+    grid-area: 8 / 1 / 9 / 3;
+}
+.rightBlue6x1 {
+    background-color: #334577;
+    grid-area: 8 / 3 / -1 / -1;
+}
