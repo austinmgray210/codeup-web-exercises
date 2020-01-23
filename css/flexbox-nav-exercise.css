@@ -25,7 +25,6 @@ ul {
     padding: 5px;
     margin: auto;
     align-items: center;
-    justify-content: space-between;
 }
 
 li:nth-child(5) {
@@ -37,14 +36,14 @@ li:nth-child(5) {
 
 /* Navbar icons */
 .navIcons {
-
 }
 
-
-
-
-
-
+li.navArticles .navProducts .navMarket .navJobs {
+    margin-right: 0 auto;
+}
+li.navFollowUs {
+    margin-left: 0 auto;
+}
 
  /* Anchor settings */
 a {
