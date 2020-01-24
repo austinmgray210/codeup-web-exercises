@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 7.65% 1fr 6.65%;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 10px;
+    height: 100vh;
+}
+
+div {
+    display: flex;
+    padding: 1.2em;
+}
+
+.topHeader {
+    grid-area: 1 / 1 / 2 / -1;
+    background-color: #ffd700;
+}
+
+.leftNav {
+    grid-area: 2 / 1 / -1 / 2;
+    background-color: #ffd700;
+}
+
+.centerArticle {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: #ffd700;
+}
+
+.rightAds {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: #ffd700;
+}
+
+.bottomFooter {
+    grid-area: 3 / 2 / 4 / -1;
+    background-color: #ffd700;
+}
