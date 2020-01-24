@@ -54,6 +54,7 @@ header ul {
     /* TODO: use flex box to horizontally line up all list items */
     display: flex;
     align-items: center;
+    /*justify-content: center;*/
 }
 
 header a {
