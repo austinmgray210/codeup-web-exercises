@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     background: mediumpurple;
     color: white;
@@ -41,9 +40,9 @@ nav {
 
 main {
     /* TODO: define the grid area of main such that it takes up the columns 3 and 4 of the second row  */
-    grid-area: 2 / 3 / 3 / 5;
-    /* TODO: make main a grid container as well */
     display: grid;
+    /* TODO: make main a grid container as well */
+    grid-area: 2 / 3 / 3 / 5;
     /* TODO: define main to contain three columns that together take up equally the full width of main and have a 1em gap between grid items */
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
@@ -54,7 +53,8 @@ main {
 header ul {
     /* TODO: use flex box to horizontally line up all list items */
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
 }
 
 header a {
@@ -75,7 +75,7 @@ header a:hover {
 .header-background {
     background: purple;
     /* TODO: define the grid area of this element to take up the entire first row of the .container grid  */
-    grid-area: 1/ 1 / 2 / -1;
+    grid-area: 1 / 1 / 2 / -1;
 }
 
 nav ul {
@@ -94,7 +94,6 @@ a {
 nav ul {
     flex-direction: column;
 }
-
 
 nav a {
     width: 100%;
