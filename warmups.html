@@ -47,12 +47,23 @@
 
 
         //Write a function called firstItem that accepts an array and returns the first item of that array
-        function firstItem(inputArray) {
-            return inputArray[0]
+        // function firstItem(inputArray) {
+        //     return inputArray[0]
+        // }
+        //
+        // console.log(firstItem(["dog", "cat", "fish", "bird", "fox"]));
+        // console.log(firstItem([1, 2, 3, 4]));
+
+
+        // Write a function called determineType that accepts a single input,
+        // and returns the type of data that input is
+        function determineType(input) {
+            return typeof input;
         }
 
-        console.log(firstItem(["dog", "cat", "fish", "bird", "fox"]));
-        console.log(firstItem([1, 2, 3, 4]));
+        console.log(determineType(7));
+        console.log(determineType(true));
+        console.log(determineType("hello"));
     </script>
 
 </body>
