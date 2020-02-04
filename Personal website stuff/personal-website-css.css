@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    height: 100%;
+    background: #b9b9b9;
+}
+/* Navbar settings start*/
+
+.navbar {
+    margin-bottom: -56px;
+    z-index: 2;
+    transition: top 0.5s ease;
+}
+
+a {
+    color: #ffffff;
+}
+
+
+
+/* Navbar settings end */
+
+
+
+/* Carousel settings start */
+
+.carousel-indicators li {
+    width: .75em;
+    height: .5em;
+    border-radius: 50%;
+    margin: 0 .3em;
+}
+
+/* Carousel settings end */
+
+
+
+
+
+
