@@ -52,6 +52,7 @@ alert("Your paycheck for this week will be $" + totalPayForWeek.toFixed(2));
 
 
 
+
 /* A student can be enrolled in a class only if the class is not full and the class schedule
  * does not conflict with her current schedule. */
 
