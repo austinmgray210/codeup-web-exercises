@@ -22,7 +22,7 @@ function sayHello(name) {
  * console.log 'helloMessage' to check your work
  */
 
-// var helloMessage = sayHello("Austin");
+var helloMessage = sayHello("Austin");
 // console.log(helloMessage);
 
 /**
