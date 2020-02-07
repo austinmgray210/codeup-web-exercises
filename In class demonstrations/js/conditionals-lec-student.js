@@ -333,7 +333,8 @@ console.log("hello from conditionals lec.js!");
 
 //TODO: Rewrite the intersection function from earlier as a switch statement.
 
-switch ("flashing yellow") {
+var lightColor = "red";
+switch (lightColor) {
     case "red":
         alert("Light is red, come to a stop.");
         break;

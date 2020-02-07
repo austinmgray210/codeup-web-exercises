@@ -16,6 +16,48 @@
  * Can you refactor your code to use functions?
  */
 
+
+// Defining the variable for user input //
+var userInput = confirm("Would you like to enter a number?");
+
+// The function itself //
+function enterANumber(userInput) {
+    if (userInput === true) {
+        var userNum = parseInt(prompt("Please enter a number."));
+        if (userNum = isNaN(userNum)) {
+            var doNotContinue = alert("THATS NO NUMBER (ﾉꐦ⊙曲ఠ)ﾉ彡┻━┻");
+        } if (doNotContinue === true) {
+            console.log("Do not continue activated");
+        } if (doNotContinue === false) {
+            alert("you chose number " + userNum + ".");
+            alert("Your number is " + userNum + " + 100 is " + (userNum + 100) + ".");
+        }
+        if (userNum % 2 === 0) {
+            alert("Your number " + userNum + " is even.");
+        }
+        if (userNum % 2 !== 0) {
+            alert("Your number" + userNum + " is odd.");
+        }
+        if (userNum < 0) {
+            alert("Your number " + userNum + " is negative.");
+        }
+        if (userNum > 0) {
+            alert("Your number " + userNum + " is positive.");
+        }
+        } else {
+            alert("(ง'̀-'́)ง");
+        }
+}
+
+
+
+
+
+// Calling the function //
+enterANumber(userInput);
+
+
+
 /* ########################################################################## */
 
 /**
