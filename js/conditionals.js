@@ -32,16 +32,16 @@ function enterANumber(userInput) {
             alert("you chose number " + userNum + ".");
             alert("Your number is " + userNum + " + 100 is " + (userNum + 100) + ".");
         }
-        if (userNum % 2 === 0) {
+        if ((userNum % 2 === 0) && (userInput != isNaN)) {
             alert("Your number " + userNum + " is even.");
         }
-        if (userNum % 2 !== 0) {
-            alert("Your number" + userNum + " is odd.");
+        if ((userNum % 2 !== 0) && (userInput != "true")) {
+            alert("Your number " + userNum + " is odd.");
         }
-        if (userNum < 0) {
+        if ((userNum < 0) && (userInput !== 0)) {
             alert("Your number " + userNum + " is negative.");
         }
-        if (userNum > 0) {
+        if ((userNum > 0) && (userInput != 0)) {
             alert("Your number " + userNum + " is positive.");
         }
         } else {
