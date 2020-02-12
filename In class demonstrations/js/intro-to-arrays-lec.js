@@ -136,7 +136,6 @@ console.log(favoriteFoods);
 
 // TODO TOGETHER: Using a for loop, iterate through the shapes array and log each shape
 
-
 // for ( var i = 0; i < shapes.length; i++){
 //     console.log(shapes[i]);
 // }
@@ -154,9 +153,13 @@ console.log(favoriteFoods);
 
 
 // TODO: What happens if we change var i = 1? or var i = 2;
+
 // We start at the element at the position of 1 or 2 instead of at the start if i = 0;
+
 // TODO: What are benefits of using loops to iterate?
+
 // much quicker to write and keeps code clutter down.
+
 // TODO: How does the loop know when to stop iterating?
 // When the condition defined has been met or is broken;
 
@@ -207,22 +210,20 @@ console.log(favoriteFoods);
 //     console.log(shape);
 // });
 
-
-
-
 // TODO: Using a for each loop, iterate through the instructors array and console.log each instructor
 
-instructors.forEach(function(instructor) {
-    console.log(instructor);
-});
+// instructors.forEach(function(instructor) {
+//     console.log(instructor);
+// });
+
 // TODO: Using a for each loop, iterate through the daysOfTheWeek array and console.log each day of the week
 
-daysOfTheWeek.forEach(function(day ) {
-    console.log(day);
-});
+// daysOfTheWeek.forEach(function(day ) {
+//     console.log(day);
+// });
 
 // TODO: Using a for each loop, iterate through the favoriteFoods array and console.log each favorite food
 
-favoriteFoods.forEach(function(food ) {
-    console.log(food);
-});
+// favoriteFoods.forEach(function(food ) {
+//     console.log(food);
+// });
