@@ -19,8 +19,8 @@
      * results. Why might this be useful?
      */
 
-    let planetsWithBreaks = "Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune";
-    console.log(planetsWithBreaks);
+    var planetsWithBreaks = planetsArray.join(<br>);
+
 
 
     /** TODO:
@@ -30,6 +30,10 @@
      * string, and <li> tags around each planet.
      */
 
-    let planetsAsUnorderedList = ("<ul><li>Mercury</li><li>Venus</li><li>Earth</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li></ul>");
-    console.log(planetsAsUnorderedList);
+      var listLoopString = "<ul>";
+      planetsArray.forEach(function(planet) {
+          listLoopString +=
+      }
+
 })();
+
