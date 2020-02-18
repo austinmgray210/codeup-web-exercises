@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#chest {
+    width: 400px;
+    height: 300px;
+    margin-top: 15em;
+    margin-left: 25em;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(22, 1fr);
+    background-color: black;
+}
+
+#left {
+    background-color: #000000;
+    grid-area: 2 / 4 / 12 / 11;
+}
+
+#Yellow {
+    background-color: #FFBC00;
+    grid-area: 2 / 2 / 18 / 22;
+}
+
+
+
+
+
