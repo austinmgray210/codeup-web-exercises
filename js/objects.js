@@ -76,17 +76,6 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    var books = [
-        {
-            Title: "Garfield at Large: His first book, "
-        }
-    ]
-
-
-
-    books.forEach(function (book, index: number) {
-        console.log("Book #" + (index + 1) + "\nTitle: " + book.title + "\nAuthor: " + book.author);
-    })
 
 
     /**
