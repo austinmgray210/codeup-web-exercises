@@ -7,7 +7,7 @@
 <body>
 
 <h1 id="main-header">Hello World!</h1>
-<ul>
+<ul id="listDefaultColor">
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
     <li data-dbid="3">Item 3</li>
@@ -25,23 +25,87 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+
+<!--<button id="btn-1">Button 1</button>-->
+<!--<button id="btn-2">Button 2</button>-->
+<!--<button id="btn-3">Button 3</button>-->
+<!--<button id="btn-4">Button 4</button>-->
+
 <script>
+    "use strict";
     (function() {
         "use strict";
+        // // TODO: Uncomment next line and get the main header element by id
+        // var mainHeader = document.getElementById("main-header");
+        //
+        // // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+        // mainHeader.innerHTML = "JavaScript is Cool";
+        //
+        // // TODO: Uncomment the next line and get the sub header element by id
+        // var subHeader = document.getElementById("sub-header");
+        //
+        // // TODO: Set the text color of subHeader to blue
+        // subHeader.style.color = "blue";
+        //
+        // // TODO: Uncomment the next line and get all list items
+        // var listItems = document.getElementsByTagName("li") ;
+        //
+        // // TODO: Set text color on every other list item to grey
+        // for (var i = 0; i < listItems.length; i++) {
+        //     if (i % 2 === 0) {
+        //         listItems[i].style.color = "grey";
+        //     }
+        // }
+        //
+        // // TODO: Set text color of li with dbid = 1 to blue
+        // for (var x = 0; x < listItems.length; x++) {
+        //     var dbId = listItems[x].getAttribute("data-dbid");
+        //     if (dbId === "1") {
+        //         listItems[x].style.color = "blue";
+        //     }
+        // }
+        //
+        // // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        // var subParagraphs = document.getElementsByClassName("sub-paragraph");
+        // subParagraphs.item(0).innerHTML = "Mission Accompished!";
+        // })();
+        // //or subParagraphs[0].innerHTML = "Mission Accomplished!";
+
+    //
+
         // TODO: Uncomment next line and get the main header element by id
+
         var mainHeader = document.getElementById("main-header");
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool";
+
+        mainHeader.addEventListener("click", function (event) {
+            mainHeader.innerHTML = "JavaScript is Cool";
+            this.style.color = "green";
+            mainHeader.addEventListener("dblclick", function (event) {
+                mainHeader.innerHTML = "Hello World!";
+                this.style.color = "black";
+            })
+        });
 
         // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = document.getElementById("sub-header");
-
-        // TODO: Set the text color of subHeader to blue
+        const subHeader = document.getElementById("sub-header");
         subHeader.style.color = "blue";
+        // TODO: Set the text color of subHeader to blue
+        subHeader.onmouseover = mouseOutColorBlack;
+        subHeader.onmouseout = mouseOverColorBlue;
+
+        function mouseOutColorBlack() {
+            this.style.color = "black";
+        }
+
+        function mouseOverColorBlue() {
+            this.style.color = "blue";
+        }
 
         // TODO: Uncomment the next line and get all list items
-        var listItems = document.getElementsByTagName("li") ;
+        var listItems = document.getElementsByTagName("li");
+        var unorderList = document.getElementById("listDefaultColor");
 
         // TODO: Set text color on every other list item to grey
         for (var i = 0; i < listItems.length; i++) {
@@ -58,12 +122,11 @@
             }
         }
 
-
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
         subParagraphs.item(0).innerHTML = "Mission Accompished!";
-        })();
-
+    })();
+    //or subParagraphs[0].innerHTML = "Mission Accomplished!";
 </script>
 </body>
 </html>
