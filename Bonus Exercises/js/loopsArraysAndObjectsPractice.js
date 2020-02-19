@@ -25,13 +25,13 @@
 //     ```js
 //         filterNumbers(["fred", true, 5, 3]) //[3, 5]
 //     ```
-    function filteredNumbers("fred", true, 5, 3) {
-        for (var i = 0; i < filteredNumbers().length; i++) {
-            if (i === "number") {
-                var
-            }
-        }
-    }
+//     function filteredNumbers("fred", true, 5, 3) {
+//         for (var i = 0; i < filteredNumbers().length; i++) {
+//             if (i === "number") {
+//                 var
+//             }
+//         }
+//     }
 //
 // 2. Write a function, `getOlder()` that takes in array of dog objects and increases the value of the age properties by 1.
 //
