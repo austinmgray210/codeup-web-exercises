@@ -1,0 +1,30 @@
+    /* BODY STYLING */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+    /* MAP STYLING */
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.transparent {
+    background: rgba(255, 255, 255, 0);
+}
+
+.mapboxgl-popup-content {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+}
+
+.mapboxgl-popup-close-button {
+display: none;
+}
