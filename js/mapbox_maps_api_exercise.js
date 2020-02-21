@@ -123,6 +123,8 @@ map.on('load', function() {
     map.on('click', 'places', function(e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description = e.features[0].properties.description;
+        map.flyTo({ center: e.features[0].geometry.coordinates });
+
 
 // Ensure that if the map is zoomed out such that multiple
 // copies of the feature are visible, the popup appears
