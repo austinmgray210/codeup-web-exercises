@@ -105,7 +105,7 @@ map.on('load', function() {
             ]
         }
     });
-// Add a layer showing the places.
+    // Layer for places //
     map.addLayer({
         'id': 'places',
         'type': 'symbol',
