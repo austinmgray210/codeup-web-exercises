@@ -35,9 +35,11 @@ $(document).ready(function() {
             codes.userFinalCode = "";
             $('#playGame').prepend('<button id="playButton" style = "font-size: 40px">Play A Game</button>').click(function () {
                 $('#picDiv').remove();
-                $('#playGame').prepend(window.location.href = "/codeup-web-exercises/clumsy-birb/index.html");
             });
-
+            $('#playButton').click(function () {
+                $('#playButton').remove();
+                $('#playGame').prepend('<iframe src = "clumsy-birb/index.html" style="width: 100%; height: 800px"></iframe>');
+            })
         } else                                                                                                                          {
             alert("The Princess Is In Another Castle!");
             console.log(userCode);
@@ -46,8 +48,6 @@ $(document).ready(function() {
         }
     }
 });
-
-
 
 
 
