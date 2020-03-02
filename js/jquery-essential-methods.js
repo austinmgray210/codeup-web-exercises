@@ -140,14 +140,13 @@ $('.circles div').css('border', 'none').last().show();
 
 // TODO: while changing the first path element to have a black fill, give its grandparent a light gray background and 10px padding
 
-$('path').first().css('fill', 'black').nextAll().css({
-    'fill': 'lightgray',
-    'padding': '10px'
+$('#path1').removeClass().addClass('black').parent().parent().css({
+    'background': 'lightgray',
+    'margin': '20px'
 });
 // TODO: change the second path element to blue, then change the 'next' element to yellow
 
-$('path').first().next().css('fill', 'blue').next().css('fill', 'yellow');
+$('#path2').removeClass().addClass('blue').next().removeClass().addClass('yellow');
 
 // TODO: What's the difference between changing the class to change the color, and simply changing the color directly?
 
-//  I can no longer use the buttons to change the color of the logo
