@@ -3,44 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <style>
     .invisible {
         visibility: hidden;
     }
+
+    .bolded {
+        font-weight: bold;
+    }
+
+    .yellowBackground {
+        background-color: yellow;
+    }
+
+    .blueFont {
+        color: blue;
+    }
 </style>
+
 <body>
 
+
 <dl>
-    <dt>Who is the director of the National Park Service?</dt>
+    <h3>10 FAQs about national parks</h3>
+    <br>
+
+    <dt id="parkQuestion1">Who is the director of the National Park Service?</dt>
         <dd class = "invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores autem commodi earum enim excepturi explicabo fugiat in ipsam, itaque magni molestias mollitia officia quibusdam quisquam sed sequi, ullam voluptatibus!</dd>
-    <dt>What government agency oversees the National Park Service?</dt>
+    <dt id="parkQuestion2">What government agency oversees the National Park Service?</dt>
         <dd class = "invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur consequatur dolore eaque earum eos hic in ipsum iusto labore laborum nobis pariatur, provident quae quam quas quibusdam, soluta tenetur!</dd>
-    <dt>How many employees are in the National Park Service?</dt>
+    <dt id="parkQuestion3">How many employees are in the National Park Service?</dt>
         <dd class = "invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur doloribus esse et laboriosam mollitia perferendis praesentium, provident quos sequi ut veniam! Accusantium harum molestiae, nisi quidem tempora tenetur ut!</dd>
-    <dt>How old is the National Park System?</dt>
+    <dt id="parkQuestion4">How old is the National Park System?</dt>
         <dd class = "invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut beatae blanditiis cupiditate distinctio et itaque, laudantium necessitatibus nostrum officia omnis placeat qui quidem quo, repellat velit voluptates. Doloribus, est!</dd>
-    <dt>What is the origin of the National Park Service arrowhead?</dt>
+    <dt id="parkQuestion5">What is the origin of the National Park Service arrowhead?</dt>
         <dd class = "invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur dolore, harum inventore libero maxime nemo nobis. Accusamus amet beatae cumque dolores laudantium molestiae nihil quas, rem? Consequuntur, laboriosam, soluta?</dd>
-    <dt>How many areas are in the National Park System?</dt>
+    <dt id="parkQuestion6">How many areas are in the National Park System?</dt>
         <dd class = "invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut delectus eveniet exercitationem odio? Aut autem consequuntur dolore enim natus nemo reiciendis ut. Assumenda corporis deserunt ex laudantium modi optio?</dd>
-    <dt>What is the largest national park site? Smallest?</dt>
+    <dt id="parkQuestion7">What is the largest national park site? Smallest?</dt>
         <dd class = "invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at exercitationem facere maiores nam nulla veniam veritatis. Delectus ducimus eaque illum ipsa nulla praesentium, quasi quis quod unde! Blanditiis, culpa!</dd>
-    <dt>How many people visit the national parks?</dt>
+    <dt id="parkQuestion8">How many people visit the national parks?</dt>
         <dd class = "invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium architecto at distinctio dolorum ducimus exercitationem laudantium nisi nostrum numquam, quaerat qui, quia quo sequi unde vel! Eum, necessitatibus.</dd>
-    <dt>What is the most-visited national park?</dt>
+    <dt id="parkQuestion9">What is the most-visited national park?</dt>
         <dd class = "invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, beatae earum enim eos, error et eum iusto maiores minima natus quam quidem quo quos saepe totam, ullam ut veniam veritatis!</dd>
-    <dt>What is the National Park Service budget?</dt>
+    <dt id="parkQuestion10">What is the National Park Service budget?</dt>
         <dd class = "invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate facere, facilis fuga itaque nisi optio tempora ullam? Blanditiis deleniti ea inventore maiores minima molestiae necessitatibus nobis qui tenetur ut.</dd>
 </dl>
 
-<button id = ddInvisibilityButton>CLICK ME</button>
+
+<!--
+    Under the FAQ, add 3 unordered lists like above. Each list should contain a
+    national park name in an h3 element, and a ul of 4 facts about the park.
+-->
+
+<h3>National Park Name</h3>
+<ul>
+    <li>Some Interesting Facts</li>
+    <li>Some Interesting Facts</li>
+    <li>Some Interesting Facts</li>
+    <li>Some Interesting Facts</li>
+</ul>
+
+<h3>National Park Name</h3>
+<ul>
+    <li>Some Interesting Facts</li>
+    <li>Some Interesting Facts</li>
+    <li>Some Interesting Facts</li>
+    <li>Some Interesting Facts</li>
+</ul>
+
+<h3>National Park Name</h3>
+<ul>
+    <li>Some Interesting Facts</li>
+    <li>Some Interesting Facts</li>
+    <li>Some Interesting Facts</li>
+    <li>Some Interesting Facts</li>
+</ul>
+
+<button id = ddInvisibilityButton>Show/Hide All</button>
+<button id = makeItYellow>YELLOWFY THINGS</button>
 
 <script src="js/jQuery.js"></script>
 <script>
+
+    $('dl').children().click( function () {
+        var parkId = $(this).attr('id');
+        if (parkId) {
+            $(this).next().toggleClass('invisible');
+        }
+    });
+
     $('#ddInvisibilityButton').click( function () {
         $('dd').toggleClass('invisible');
+    });
+
+    $('h3').click(function () {
+        $(this).next().toggleClass('bolded');
+    });
+
+    $('#makeItYellow').click(function () {
+        $('h3').each( function () {
+            $(this).next().children().last().toggleClass('yellowBackground');
+        })
+    });
+
+    $('li').click( function () {
+        $(this).parent().children().first().toggleClass('blueFont');
     })
+
 </script>
 </body>
 </html>
