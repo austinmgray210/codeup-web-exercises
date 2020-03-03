@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>jQuery FAQ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 <style>
@@ -21,10 +22,22 @@
     .blueFont {
         color: blue;
     }
+
+    .hideAtStart {
+        display: none;
+    }
+
+
 </style>
 
 <body>
 
+<div>
+    <h1>Would you like to sign up for our newsletter?<span id="close"> X</span></h1>
+    <div id="registrationPrompt" class="alert alert-primary hideAtStart" role="alert">
+        <h2>Do YoU WaNT tO rEgIStEr?</h2>
+    </div>
+</div>
 
 <dl>
     <h3>10 FAQs about national parks</h3>
@@ -59,7 +72,7 @@
 -->
 
 <h3>National Park Name</h3>
-<ul>
+<ul class="hideAtStart">
     <li>Some Interesting Facts</li>
     <li>Some Interesting Facts</li>
     <li>Some Interesting Facts</li>
@@ -67,7 +80,7 @@
 </ul>
 
 <h3>National Park Name</h3>
-<ul>
+<ul class="hideAtStart">
     <li>Some Interesting Facts</li>
     <li>Some Interesting Facts</li>
     <li>Some Interesting Facts</li>
@@ -75,7 +88,7 @@
 </ul>
 
 <h3>National Park Name</h3>
-<ul>
+<ul class="hideAtStart">
     <li>Some Interesting Facts</li>
     <li>Some Interesting Facts</li>
     <li>Some Interesting Facts</li>
@@ -87,6 +100,11 @@
 
 <script src="js/jQuery.js"></script>
 <script>
+
+$(function(){
+
+    $('#registrationPrompt').delay(8000).fadeIn(3000);
+
 
     $('dl').children().click( function () {
         var parkId = $(this).attr('id');
@@ -100,7 +118,7 @@
     });
 
     $('h3').click(function () {
-        $(this).next().toggleClass('bolded');
+        $(this).next().slideToggle().removeClass();
     });
 
     $('#makeItYellow').click(function () {
@@ -111,8 +129,16 @@
 
     $('li').click( function () {
         $(this).parent().children().first().toggleClass('blueFont');
-    })
+    });
 
+    $('#close').click(function () {
+        $(this).parent().hide();
+    });
+
+})
 </script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
