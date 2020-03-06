@@ -1,0 +1,104 @@
+/* BODY STYLING */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+/* MAP STYLING */
+#map {
+    top: 16em;
+    margin: auto;
+    width: 95%;
+    height: 30em;
+}
+
+img {
+    width: 100%;
+}
+
+.transparent {
+    background: rgba(255, 255, 255, 0);
+}
+
+.mapboxgl-popup-content {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+}
+
+.mapboxgl-popup-close-button {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* TESTING & DELETE LATER */
+
+
+#bigBoi {
+
+    background: rgba(0,0,0, .15);
+    width: 90%;
+    border-radius: 6px;
+    padding: 15px 0;
+
+}
+
+.card-body {
+    padding: 5px;
+    height: 20em;
+    mso-gutter-margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
