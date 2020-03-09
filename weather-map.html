@@ -9,51 +9,53 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet'/>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
     <link rel="stylesheet" href="css/weather-map.css">
-
-    <link href="data/weather-conditions.json">
-
-
 </head>
-<body>
 
+<body>
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1>weather and stuff</h1>
-            <h3 id="weatherLocation">your location and shit</h3>
+            <h1>Your local weather</h1>
+            <h3 id="weatherLocation">Your location:</h3>
         </div>
     </div>
 </div>
 
 
-<div class="container mt-5">
+<div id="cardContainer" class="container mt-5">
     <div class="row">
         <div class="col-12">
             <div class="row">
                 <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional
-                                content.</p>
+                            <div id="todaysDegrees" class="tempFont card-text">25F</div>
+                            <div id="todaysIcon" class="card-title weatherIcon"></div>
+                            <div id="todaysRain" class="weatherInfoFont" >Rain: </div>
+                            <div id="todaysWind" class="weatherInfoFont" >Wind: 12MPH</div>
+                            <div id="todaysPressure" class="weatherInfoFont">Pressure: --inHg</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional
-                                content.</p>
+                            <div id="tomorrowsDegrees" class="tempFont card-text">25F</div>
+                            <div id="tomorrowsIcon" class="card-title weatherIcon"></div>
+                            <div id="tomorrowsRain" class="weatherInfoFont" >Rain: </div>
+                            <div id="tomorrowsWeatherWind" class="weatherInfoFont" >Wind: 12MPH</div>
+                            <div id="tomorrowsPressure" class="weatherInfoFont">Pressure: --inHg</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional
-                                content.</p>
+                            <div id="inTwoDaysDegrees" class="tempFont card-text">25F</div>
+                            <div id="inTwoDaysIcon" class="card-title weatherIcon"></div>
+                            <div id="inTwoDaysRain" class="weatherInfoFont" >Rain: </div>
+                            <div id="inTwoDaysWind" class="weatherInfoFont" >Wind: 12MPH</div>
+                            <div id="inTwoDaysPressure" class="weatherInfoFont">Pressure: --inHg</div>
                         </div>
                     </div>
                 </div>
@@ -63,24 +65,8 @@
 </div>
 
 
-<!--<div id="bigBoi" class="container mt-3 mb-3">-->
-<!--    <div class="col-12">-->
-<!--        <div class="row">-->
-
-<!--            <div id="weatherBox1" class="col-4 grayBG">123</div>-->
-
-
-<!--            <div id="weatherBox2" class="col-4  grayBG">123</div>-->
-
-
-<!--            <div id="weatherBox3" class="col-4 grayBG">123</div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-
 <!-- Weather Map itself -->
-<div id="map" class="jumbotron-fluid"></div>
+<div id="map" class="jumbotron-fluid mt-5"></div>
 
 
 <script src="js/jQuery.js"></script>

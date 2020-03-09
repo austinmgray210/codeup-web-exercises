@@ -4,21 +4,64 @@
     padding: 0;
 }
 
+html {
+
+}
+
 body {
-    height: 100vh;
-    background-color: whitesmoke;
+    background-image: url("../img/alaska.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.card {
+    height: 40vh;
+}
+
+/*#blurryBG {*/
+/*    background: transparent;*/
+/*    filter: blur(3px);*/
+/*    -webkit-filter: blur(3px);*/
+/*    z-index: 1;*/
+/*    height: 30%;*/
+/*    width: 75%;*/
+/*}*/
+
+.tempFont {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.weatherInfoFont {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: .5em;
+
+}
+
+
+.weatherIcon img {
+    display: block;
+    max-width: 414px;
+    max-height: 160px;
+    width: auto;
+    height: auto;
+    padding: 0 5px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* MAP STYLING */
 #map {
-    top: 16em;
+    /*top: 13em;*/
     margin: auto;
     width: 95%;
     height: 30em;
-}
-
-img {
-    width: 100%;
 }
 
 .transparent {
@@ -34,8 +77,15 @@ img {
     display: none;
 }
 
+.card-body {
+    padding: 5px;
+    mso-gutter-margin: 5px;
+}
 
+.card {
+    height: auto;
 
+}
 
 
 
@@ -55,11 +105,7 @@ img {
 
 }
 
-.card-body {
-    padding: 5px;
-    height: 20em;
-    mso-gutter-margin: 5px;
-}
+
 
 
 
