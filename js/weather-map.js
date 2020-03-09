@@ -18,36 +18,25 @@ $(document).ready(function () {
 
 
     var weatherIcons = {
-            "clear-day": "<img src='./weather-icons/sun.png' alt='day'>",
-            "clear-night": "<img src='./weather-icons/night.png' alt='night'>",
-            "rain": "<img src='./weather-icons/rain.png' alt='rain'>",
-            "snow": "<img src='./weather-icons/snow.png' alt='snow'>",
-            "sleet": "<img src='./weather-icons/sleet.png' alt='sleet'>",
-            "wind": "<img src='./weather-icons/wind.png' alt='wind'>",
-            "fog": "<img src='./weather-icons/fog.png' alt='fog'>",
-            "cloudy": "<img src='./weather-icons/cloudy.png' alt='clouds'>",
-            "partly-cloudy-day": "<img src='./weather-icons/sun-partly-cloudy.png' alt='p-c-day'>",
-            "partly-cloudy-night": "<img src='./weather-icons/night-partly-cloudy.png' alt='p-c-night'>"
-        };
+        "clear-day": "<img src='./weather-icons/sun.png' alt='day'>",
+        "clear-night": "<img src='./weather-icons/night.png' alt='night'>",
+        "rain": "<img src='./weather-icons/rain.png' alt='rain'>",
+        "snow": "<img src='./weather-icons/snow.png' alt='snow'>",
+        "sleet": "<img src='./weather-icons/sleet.png' alt='sleet'>",
+        "wind": "<img src='./weather-icons/wind.png' alt='wind'>",
+        "fog": "<img src='./weather-icons/fog.png' alt='fog'>",
+        "cloudy": "<img src='./weather-icons/cloudy.png' alt='clouds'>",
+        "partly-cloudy-day": "<img src='./weather-icons/sun-partly-cloudy.png' alt='p-c-day'>",
+        "partly-cloudy-night": "<img src='./weather-icons/night-partly-cloudy.png' alt='p-c-night'>"
+    };
 
 
+    $('#todaysIcon').html(weatherIcons.rain);
+    $('#tomorrowsIcon').html(weatherIcons.wind);
+    $('#inTwoDaysIcon').html(weatherIcons["clear-day"]);
 
-$('#todaysIcon').html(weatherIcons.rain);
-$('#tomorrowsIcon').html(weatherIcons.wind);
-$('#inTwoDaysIcon').html(weatherIcons["clear-day"]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // $('#mapButton').click(function () {
+    //     $('#map').toggleClass("hidden");
+    // })
 
 });

@@ -12,61 +12,57 @@
 </head>
 
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>Your local weather</h1>
-            <h3 id="weatherLocation">Your location:</h3>
-        </div>
-    </div>
-</div>
 
-
-<div id="cardContainer" class="container mt-5">
-    <div class="row">
-        <div class="col-12">
+<main>
+    <div id="weatherInfo">
+        <div id="cardContainer">
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div id="todaysDegrees" class="tempFont card-text">25F</div>
-                            <div id="todaysIcon" class="card-title weatherIcon"></div>
-                            <div id="todaysRain" class="weatherInfoFont" >Rain: </div>
-                            <div id="todaysWind" class="weatherInfoFont" >Wind: 12MPH</div>
-                            <div id="todaysPressure" class="weatherInfoFont">Pressure: --inHg</div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card transparent">
+                                <div class="card-body">
+                                    <div id="todayDate" class="dateFont">Today</div>
+                                    <div id="todaysIcon" class="card-title weatherIcon"></div>
+                                    <div id="todaysDegrees" class="weatherInfoFont card-text">25F</div>
+                                    <div id="todaysRain" class="weatherInfoFont">Rain:</div>
+                                    <div id="todaysWind" class="weatherInfoFont">Wind: 12MPH</div>
+                                    <div id="todaysPressure" class="weatherInfoFont">Pressure: --inHg</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div id="tomorrowsDegrees" class="tempFont card-text">25F</div>
-                            <div id="tomorrowsIcon" class="card-title weatherIcon"></div>
-                            <div id="tomorrowsRain" class="weatherInfoFont" >Rain: </div>
-                            <div id="tomorrowsWeatherWind" class="weatherInfoFont" >Wind: 12MPH</div>
-                            <div id="tomorrowsPressure" class="weatherInfoFont">Pressure: --inHg</div>
+                        <div class="col-sm-4">
+                            <div class="card transparent">
+                                <div class="card-body">
+                                    <div id="tomorrowsDate" class="dateFont">Tomorrow</div>
+                                    <div id="tomorrowsIcon" class="card-title weatherIcon"></div>
+                                    <div id="tomorrowsDegrees" class="weatherInfoFont card-text">25F</div>
+                                    <div id="tomorrowsRain" class="weatherInfoFont">Rain:</div>
+                                    <div id="tomorrowsWind" class="weatherInfoFont">Wind: 12MPH</div>
+                                    <div id="tomorrowsPressure" class="weatherInfoFont">Pressure: --inHg</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div id="inTwoDaysDegrees" class="tempFont card-text">25F</div>
-                            <div id="inTwoDaysIcon" class="card-title weatherIcon"></div>
-                            <div id="inTwoDaysRain" class="weatherInfoFont" >Rain: </div>
-                            <div id="inTwoDaysWind" class="weatherInfoFont" >Wind: 12MPH</div>
-                            <div id="inTwoDaysPressure" class="weatherInfoFont">Pressure: --inHg</div>
+                        <div class="col-sm-4">
+                            <div class="card transparent">
+                                <div class="card-body">
+                                    <div id="inTwoDaysDate" class="dateFont">Wednesday</div>
+                                    <div id="inTwoDaysIcon" class="card-title weatherIcon"></div>
+                                    <div id="inTwoDaysDegrees" class="weatherInfoFont card-text">25F</div>
+                                    <div id="inTwoDaysRain" class="weatherInfoFont">Rain:</div>
+                                    <div id="inTwoDaysWind" class="weatherInfoFont">Wind: 12MPH</div>
+                                    <div id="inTwoDaysPressure" class="weatherInfoFont">Pressure: --inHg</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</main>
 
 
-<!-- Weather Map itself -->
-<div id="map" class="jumbotron-fluid mt-5"></div>
 
 
 <script src="js/jQuery.js"></script>
