@@ -67,13 +67,24 @@ console.log(totalExp);
 
 // TODO: Use .reduce to get the longest email from the list of users.
 
+let longestEmail = users.reduce((longest, user) => {
+    if (user.email.length > longest.length) {
+        longest = user.email;
+    }
+    return longest;
+}, '');
+console.log(longestEmail);
+
 
 
 // TODO: Use .reduce to get the list of user's names in a single string. Example: Your instructors are: ryan, luis, zach, fernando, justin.
 
 
-
-
+// // Like saying .forEach
+// let longest = users.reduce((longest, user) => {   // Like saying var longest = ''; (value given after } at bottom).
+//     console.log(user.email);
+//     return user.email;
+// }, '');
 
 
 

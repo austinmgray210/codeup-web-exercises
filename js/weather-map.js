@@ -31,6 +31,8 @@ $(document).ready(function () {
     };
 
 
+
+
     $('#todaysIcon').html(weatherIcons.rain);
     $('#tomorrowsIcon').html(weatherIcons.wind);
     $('#inTwoDaysIcon').html(weatherIcons["clear-day"]);

@@ -71,11 +71,15 @@ main::before {
     margin: -25px auto;
 }
 
-/*#map {*/
-/*    margin: auto;*/
-/*    width: 90vw;*/
-/*    height: 20em;*/
-/*}*/
+canvas.mapboxgl-canvas {
+}
+
+#map {
+    overflow: visible;
+    width: 100%;
+}
+
+
 
 .transparent {
     background: rgba(255, 255, 255, .2);
