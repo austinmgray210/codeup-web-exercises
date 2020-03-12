@@ -12,11 +12,12 @@ main::before {
     background-position: bottom;
     width: 100vw;
     height: 100vh;
+    z-index: -1;
 }
 
 main {
     margin: auto;
-    top: 15em;
+    top: 10em;
     position: relative;
     background: hsla(0,0%,60%,.3);
     line-height: 1.5;
@@ -74,12 +75,9 @@ main::before {
 canvas.mapboxgl-canvas {
 }
 
-#map {
-    overflow: visible;
+.card-body > div {
     width: 100%;
 }
-
-
 
 .transparent {
     background: rgba(255, 255, 255, .2);
@@ -108,6 +106,21 @@ canvas.mapboxgl-canvas {
 
 .hidden {
     display: none;
+}
+
+#mapModal {
+}
+
+#map {
+    position: absolute;
+
+    left: 10%;
+    top: 25.5%;
+    bottom: 0;
+    z-index: 2;
+    width: 80%;
+    height: 30%;
+
 }
 
 

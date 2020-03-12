@@ -27,15 +27,10 @@
 
 // TODO: Create a function that accepts a GitHub username, and returns a promise that resolves with the date of the last commit that user made.
 
-// Timestamp format YYYY-MM-DDTHH:MM:SSZ
-
-
 fetch(`https://api.github.com/users/${gitHub.username}/events/public`, {headers: {'Authorization': 'token ' + gitHub.key}})
     .then(response => response.json())
     .then(data => {
         var time = $(data);
         console.log($(time[0].created_at).selector);
     });
-
-
 
